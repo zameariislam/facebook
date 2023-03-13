@@ -171,17 +171,21 @@
  }
 
  nav ul li::after {
-    display: block;
+    display: none;
      content: attr(data-tag);
-     height: 30px;
-     width: 100px;
-     background: red;
+     background: rgb(239, 230, 230);
+
+    
+    
      position: absolute;
-     bottom: -27px;
+     bottom: -38px;
      left: 50%;
      transform: translateX(-50%);
-     color: white;
+     color:black;
+     font-size: 14px;
      text-align: center;
+     padding: 8px 10px;
+     border-radius: 8px;
      
 
 

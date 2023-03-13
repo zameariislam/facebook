@@ -36,7 +36,7 @@
      justify-content: space-between;
      align-items: center;
      background-color: #FFFFFF;
-     border-bottom: 1px solid ;
+     border-bottom: 1px solid;
  }
 
  /* .search_area {
@@ -147,58 +147,138 @@
      color: white;
  }
 
- nav ul li {
 
+ nav ul li a {
+     display: inline-block;
      padding: 10px 44px;
 
      border-radius: 10px;
      transition: 0.3s;
      position: relative;
 
- }
-
- nav ul li:hover {
-     background: #F2F2F2;
 
  }
 
  nav ul li span {
-     color: rgb(93, 92, 90);
-     font-size: 35px;
-
+     color: rgb(159, 158, 155);
+     width: 28px;
+     height: 28px;
 
 
  }
 
- nav ul li::after {
-    display: none;
-     content: attr(data-tag);
-     background: rgb(239, 230, 230);
+ nav ul li a:hover {
+     background: #F2F2F2;
 
-    
-    
+ }
+
+ nav ul li a::after {
+     display: none;
+     content: attr(data-tag);
+
      position: absolute;
-     bottom: -38px;
+     bottom: -36px;
      left: 50%;
      transform: translateX(-50%);
-     color:black;
-     font-size: 14px;
-     text-align: center;
-     padding: 8px 10px;
+     background: red;
+     color: black;
+     background: #F2F2F2;
      border-radius: 8px;
-     
+     text-align: center;
+     font-size: 14px;
+     padding: 8px 10px;
+
 
 
  }
- nav ul li:hover::after{
-    display: block;
+
+ nav ul li a:hover::after {
+     display: block;
+ }
+
+ nav ul li:first-child a:hover {
+     background: unset;
+     border-radius: unset;
 
  }
 
+ nav ul li:first-child a {
+     border-bottom: 3px solid blue;
+     border-radius: unset;
+     padding: 12px 44px;
 
+ }
+
+ nav ul li:first-child a span {
+     color: blue;
+ }
 
 
  .profile_section ul {
      display: flex;
      align-items: center;
+ }
+
+ .profile_section ul li:first-child img {
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     margin-right: 5px;
+
+
+ }
+
+
+
+ .profile_section ul li {
+     margin: 0 20px;
+     background: #4f5050;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     transition: 0.3s;
+
+
+ }
+
+ .profile_section ul li span {
+     color: white;
+     width: 20px;
+     height: 20px;
+
+
+
+ }
+
+ .profile_section ul li i {
+     color: rgb(132, 129, 129);
+   font-size: 20px;
+ }
+
+ .profile_section ul li:hover {
+     background: #e3eaea;
+
+ }
+
+
+ .profile_section ul li:first-child {
+     color: wheat;
+
+     border-radius: 25px;
+     padding: 5px 10px;
+     transition: 0.3s;
+     cursor: pointer;
+     height: unset;
+     width: unset;
+     background: unset;
+
+
+ }
+
+ .profile_section ul li:first-child:hover {
+     background: #4f5050
  }
